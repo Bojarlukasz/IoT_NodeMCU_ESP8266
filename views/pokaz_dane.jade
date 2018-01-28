@@ -1,0 +1,23 @@
+extends layout
+
+
+block content
+    h1.
+        Dane z czujnika SHT:
+    table(border="1",cellpadding="10")
+        tr
+         td
+               h4="Data"
+         td
+               h4="Temperatura"
+         td
+               h4="Wilgotnosc"
+        each id, i in pokaz_dane
+          tr
+             td
+               h4=id.date
+             td
+               h4=id.temp
+             td
+               h4=id.wilg   
+               

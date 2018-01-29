@@ -50,8 +50,9 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 ### How to install
 1. Install Node JS and ExpressJS via npm
 2. Install MongoDB
-3) Install and use FusionChart Library
-4) Run and Generate Chart
+3. Install and use FusionChart Library
+4. Copy our files to your server
+5. Run and send some data from NodeMCU
 
 ### Our database:
 ![Alt text](Images/DB_console.png?raw=true "DB_console.png")

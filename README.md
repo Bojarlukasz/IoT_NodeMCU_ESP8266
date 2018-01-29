@@ -1,6 +1,9 @@
 # IoT_NodeMCU_ESP8266
 This repository contains source code necessary to launch an Node.js server and NodeMCU with ESP8266 and DHT22. 
 
+### Simple diagram of our system:
+![Alt text](Images/scheme.png?raw=true "Scheme")
+
 ## Node.js 
 This is a design environment based on Google's V8 JavaScript engine. In this environment, we create a web server, server scripts and any auxiliary functions of web applications.
 
@@ -41,7 +44,5 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 | 3    | NC       | Not use     |
 | 4    | GND      |Ground     |
 
-## Simple diagram of our system:
 
-![Alt text](Images/scheme.png?raw=true "Scheme")
 

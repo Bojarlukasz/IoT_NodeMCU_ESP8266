@@ -28,6 +28,9 @@ click OK to close the preference Tab.
 
 Module collects data from the DHT22 sensor and sends them with a GET request to the WWW server. The correct data recording is signaled by blinking of the green diode and failure by red. In addition, the current temperature status is signaled by the color of the RGB diode.
 
+### Board scheme:
+![Alt text](Images/Board_scheme.png?raw=true "Board_scheme")
+
 ## DHT22
 Temperature and Humidity Sensor. Here are the pin definitions:
 

@@ -29,3 +29,4 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 ## Simple diagram of system:
 
 ![Alt text](Images/s.png?raw=true "Scheme")
+

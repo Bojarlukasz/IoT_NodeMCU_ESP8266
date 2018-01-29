@@ -38,7 +38,7 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 | 3    | NC       | Not use     |
 | 4    | GND      |Ground     |
 
-## Simple diagram of system:
+## Simple diagram of our system:
 
 ![Alt text](Images/scheme.png?raw=true "Scheme")
 

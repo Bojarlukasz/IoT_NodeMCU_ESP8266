@@ -24,7 +24,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 click OK to close the preference Tab.
 4. After completing the above steps , go to Tools and board, and then select board Manager
 5. Navigate to esp8266 by esp8266 community and install the software for Arduino.
-6. Once all the above process been completed we are read to program our esp8266 with Arduino IDE.
+Now you are read to program NodeMCU_ESP8266 with Arduino IDE.
 
 Module collects data from the DHT22 sensor and sends them with a GET request to the WWW server. The correct data recording is signaled by blinking of the green diode and failure by red. In addition, the current temperature status is signaled by the color of the RGB diode.
 

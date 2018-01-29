@@ -1,5 +1,5 @@
 # IoT_NodeMCU_ESP8266
-This repository contains source code necessary to launch an Node.js server and NodeMcu. 
+This repository contains source code necessary to launch an Node.js server and NodeMCU with ESP8266 and DHT22. 
 
 ## Node.js 
 This is a design environment based on Google's V8 JavaScript engine. In this environment, we create a web server, server scripts and any auxiliary functions of web applications.

@@ -44,8 +44,18 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 | 3    | NC       | Not use     |
 | 4    | GND      |Ground     |
 
-## How it looks
-![Alt text](Images/DB_console.png?raw=true "DB_console.png")
+## Server environment
 ![Alt text](Images/sys.jpg?raw=true "sys.jpg")
+
+### How to install
+1. Install Node JS and ExpressJS via npm
+2. Install MongoDB
+3) Install and use FusionChart Library
+4) Run and Generate Chart
+
+### Our database:
+![Alt text](Images/DB_console.png?raw=true "DB_console.png")
+
+### Our chart:
 ![Alt text](Images/chart.jpg?raw=true "chart.jpg")
 

@@ -44,5 +44,8 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 | 3    | NC       | Not use     |
 | 4    | GND      |Ground     |
 
-
+## How it looks
+![Alt text](Images/DB_console.png?raw=true "DB_console.png")
+![Alt text](Images/sys.jpg?raw=true "sys.jpg")
+![Alt text](Images/chart.jpg?raw=true "chart.jpg")
 

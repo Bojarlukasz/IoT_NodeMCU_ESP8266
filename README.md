@@ -31,7 +31,7 @@ Module collects data from the DHT22 sensor and sends them with a GET request to 
 ### Board scheme:
 ![Alt text](Images/Board_scheme.png?raw=true "Board_scheme")
 
-## DHT22
+### DHT22
 Temperature and Humidity Sensor. Here are the pin definitions:
 
 | Pin  | Symbol | Descriptions |

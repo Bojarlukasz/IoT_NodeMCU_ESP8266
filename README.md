@@ -31,6 +31,11 @@ click OK to close the preference Tab.
 
 Module collects data from the DHT22 sensor and sends them with a GET request to the WWW server. The correct data recording is signaled by blinking of the green diode and failure by red. In addition, the current temperature status is signaled by the color of the RGB diode.
 
+### GET Request
+```c++
+res_status = send_get(cl, "GET /saveData?temp=" + temperature + "&humidity=" + humidity + " HTTP/1.1");
+```
+
 ### Board scheme:
 ![Alt text](Images/BoardScheme.png?raw=true "Board_scheme")
 

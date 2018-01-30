@@ -61,7 +61,7 @@ void setup() {
 | Pin  | Symbol     | NodeMCU pin | Descriptions |
 | ---: |     :---:  |  :---:  |        :--- |
 | 1    | RED        |  D3  |Resistor 150Ω  |
-| 2    | GND        |    |Ground    |
+| 2    | GND        |   G |Ground    |
 | 3    | BLUE       |   D5  |Resistor 100Ω     |
 | 4    |   GREEN    |  D4  |Resistor 100Ω     |
 

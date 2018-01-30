@@ -37,12 +37,12 @@ Module collects data from the DHT22 sensor and sends them with a GET request to 
 ### DHT22
 Temperature and Humidity Sensor. Here are the pin definitions:
 
-| Pin  | Symbol | Descriptions |
-| ---: |     :---:      |          :--- |
-| 1    | VCC            | Power supply 3.3V from NodeMCU   |
-| 2    | DOUT       | Data output, connected to the pin SDA.     |
-| 3    | NC       | Not use     |
-| 4    | GND      |Ground     |
+| Pin  | Symbol         | Descriptions                               |
+| ---: |     :---:      |                                       :--- |
+| 1    | VCC            | Power supply 3.3V from NodeMCU             |
+| 2    | DOUT           | Data output, connected to the pin SDA.     |
+| 3    | NC             | Not use                                    |
+| 4    | GND            | Ground                                     |
 
 ### Led RGB
 RGB diode with common anode is activated by pwm signal on particular pins corresponding to the color of light.
@@ -52,11 +52,18 @@ void setup() {
   pinMode(green, OUTPUT);
   pinMode(blue, OUTPUT);
 }
-  //Only red color is activated
+  //Only red color is powered
   analogWrite(red, 0);
   analogWrite(green, 1000);
   analogWrite(blue, 1000);
 ```
+
+| Pin  | Symbol     | Descriptions |
+| ---: |     :---:  |          :--- |
+| 1    | RED        | Resistor 150Ω  |
+| 2    | GND        | Ground    |
+| 3    | BLUE       | Resistor 100Ω     |
+| 4    |   GREEN    | Resistor 100Ω     |
 
 ## Server environment
 ![Alt text](Images/sys.jpg?raw=true "sys.jpg")

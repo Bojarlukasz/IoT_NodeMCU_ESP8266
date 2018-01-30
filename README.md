@@ -47,11 +47,11 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 ### Led RGB
 RGB diode with common anode is activated by pwm signal on particular pins corresponding to the color of light.
 ```c++
-//Led RGB
+void setup() {
   pinMode(red, OUTPUT);
   pinMode(green, OUTPUT);
   pinMode(blue, OUTPUT);
-  
+}
   //Only red color is activated
   analogWrite(red, 0);
   analogWrite(green, 1000);

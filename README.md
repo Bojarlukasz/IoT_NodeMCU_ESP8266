@@ -14,7 +14,7 @@ It is an efficient NoSQL database with very efficient scalability. In this datab
 This module acts as a web server and extends the Node.js environment to provide several key components to handle web requests.
 
 ## Nginx
-HTTP proxy server that redirects all requests from the address "szustakowses.nazwa.pl" to the address of the Node.js server implemented on port 3400.
+HTTP proxy server that redirects all requests from the address "szustakowses.nazwa.pl" on port 80 to the address of the Node.js server implemented on port 3400.
 
 ## ESP8266 NodeMCU
 NodeMCU is an open source IoT platform. It includes firmware which runs on the ESP8266 Wi-Fi SoC. 
@@ -44,15 +44,30 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 | 3    | NC       | Not use     |
 | 4    | GND      |Ground     |
 
+### Led RGB
+RGB diode with common anode is activated by pwm signal on particular pins corresponding to the color of light.
+```c++
+//Led RGB
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+  
+  //Only red color is activated
+  analogWrite(red, 0);
+  analogWrite(green, 1000);
+  analogWrite(blue, 1000);
+```
+
 ## Server environment
 ![Alt text](Images/sys.jpg?raw=true "sys.jpg")
 
 ### How to install
-1. Install Node JS and ExpressJS via npm
-2. Install MongoDB
-3. Install and use FusionChart Library
-4. Copy our files to your server
-5. Run and send some data from NodeMCU
+1. Install Nginx on your server and copy our configuration file "Nginx/conf.d/szustakowses.nazwa.pl.conf" to your conf.d folder.
+2. Install Node JS and ExpressJS via npm
+3. Install MongoDB
+4. Install and use FusionChart Library
+5. Copy our files from Node.js folder to your server
+6. Run and send some data from NodeMCU
 
 ### Our database:
 ![Alt text](Images/DB_console.png?raw=true "DB_console.png")

@@ -40,7 +40,7 @@ Temperature and Humidity Sensor. Here are the pin definitions:
 | Pin  | Symbol         | NodeMCU pin | Descriptions                               |
 | ---: |     :---:      |   :---:  |                                          :--- |
 | 1    | VCC            |  3V3        |    Power supply 3.3V from NodeMCU             |
-| 2    | DOUT           |   D1 + G      |    D1 - Data output, G - 4,7kΩ Resistor to Ground   |
+| 2    | DOUT           |   D1 + 3V3      |    D1 - Data output, 3V3 - 4,7kΩ Resistor to Power   |
 | 3    | NC             |  -        | Not use                                    |
 | 4    | GND            |  G        |Ground                               |
 

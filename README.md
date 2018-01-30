@@ -5,7 +5,7 @@ This repository contains source code necessary to launch an Node.js server and N
 #### Our server address to save data: http://szustakowses.nazwa.pl/saveData?temp=[some_value]&humidity=[some_value]
 
 ### Simple diagram of our system:
-![Alt text](Images/scheme.png?raw=true "Scheme")
+![Alt text](Images/sys_scheme.png?raw=true "Scheme")
 
 ## Node.js 
 This is a design environment based on Google's V8 JavaScript engine. In this environment, we create a web server, server scripts and any auxiliary functions of web applications.

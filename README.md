@@ -1,8 +1,8 @@
 # IoT_NodeMCU_ESP8266
 This repository contains source code necessary to launch an Node.js server and NodeMCU with ESP8266 and DHT22. 
 
-Our server domain: http://szustakowses.nazwa.pl/
-Our server address to save data: http://szustakowses.nazwa.pl/saveData?temp=[value]&humidity=[value]
+### Our server domain: http://szustakowses.nazwa.pl/
+### Our server address to save data: http://szustakowses.nazwa.pl/saveData?temp=[some_value]&humidity=[some_value]
 
 ### Simple diagram of our system:
 ![Alt text](Images/scheme.png?raw=true "Scheme")

@@ -44,6 +44,9 @@ res_status = send_get(cl, "saveData?temp=" + temperature + "&humidity=" + humidi
 bool send_get(WiFiClient cl, String msq_GET){
   HTTPClient http;
   http.begin("http://" + (String)nodejs_ip + "/" + (String)msq_GET);
+  http.addHeader("Content-Type", "text/plain");
+  int httpCode = http.GET();   //Get the server response (if correct -> httpCode=200)
+  http.end();
   ...
 ```
 

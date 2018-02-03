@@ -36,7 +36,15 @@ Module collects data from the DHT22 sensor and sends them with a GET request to 
 
 ### GET Request
 ```c++
+...
+const char* nodejs_ip = "szustakowses.nazwa.pl";
+....
 res_status = send_get(cl, "saveData?temp=" + temperature + "&humidity=" + humidity);
+...
+bool send_get(WiFiClient cl, String msq_GET){
+  HTTPClient http;
+  http.begin("http://" + (String)nodejs_ip + "/" + (String)msq_GET);
+  ...
 ```
 
 ### Board scheme:

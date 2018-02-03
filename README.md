@@ -36,7 +36,7 @@ Module collects data from the DHT22 sensor and sends them with a GET request to 
 
 ### GET Request
 ```c++
-res_status = send_get(cl, "GET /saveData?temp=" + temperature + "&humidity=" + humidity + " HTTP/1.1");
+res_status = send_get(cl, "saveData?temp=" + temperature + "&humidity=" + humidity);
 ```
 
 ### Board scheme:

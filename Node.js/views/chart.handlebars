@@ -1,0 +1,44 @@
+<div id="table-location">
+
+</div>
+
+<br/>
+
+<!-- Location where the chart will be added -->
+<div id="chart-location">
+
+</div>
+
+<script id="tabular-template" type="text/html">
+
+<h2>Inteligentne Systemy Pomiarowe</h2>
+
+
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>Month</td>
+      \{{#each categories}} <td>\{{label}}</td> \{{/each }}
+    </tr>
+  </thead>
+  <tbody>
+    \{{#each dataset}}
+    <tr>
+      <td>\{{seriesname}}</td>
+      \{{#each data}} <td>\{{value}}</td> \{{/each}}
+    </tr>
+    \{{/each}}
+  </tbody>
+</table>
+
+
+<div id="button">
+    <form style="display: inline;" action="\{{button_url}}">
+      <button value=" Send" type="submit" id="submit" class=" \{{button_style}} "> \{{button_name}} </button>
+      <h4 style="display: inline; margin-left: 10px;"> LED IS <i class="flag-bfh-ES" style="font: bold; color: \{{led_state_color}} ;"> \{{led_state}} </i></h4>
+    </form>
+</div>
+
+</script>

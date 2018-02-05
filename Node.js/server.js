@@ -46,8 +46,8 @@ function getData(responseObj){
     
     if ( err ) throw err;
     var monthArray = [];
-    var petrolPrices = [];
-    var dieselPrices = [];
+    var humidity = [];
+    var temp = [];
     var trendLine = [];
     var srednia = [];
     
@@ -79,18 +79,18 @@ function getData(responseObj){
       //category array
       var month = doc['date'];
       //series 1 values array
-      var petrol = doc['wilg'];
+      var h = doc['wilg'];
       //series 2 values array
-      var diesel = doc['temp'];
+      var t = doc['temp'];
 	//trendlin
 	
-	var spr = isNaN(diesel);
+	var spr = isNaN(h);
 
 	if(spr == false){
 
         var licznik = licznik +1;
-	var wartosc = wartosc + parseInt(diesel);
-	var wartosc2 =wartosc2 +  parseInt(petrol);
+	var wartosc = wartosc + parseInt(h);
+	var wartosc2 =wartosc2 +  parseInt(t);
 	
 	var sredniaTEMP = wartosc / licznik;
 	var sredniaWILG = wartosc2/ licznik;
@@ -100,8 +100,8 @@ function getData(responseObj){
 	var sredniaWILG = sredniaWILG.toFixed(2);
 	
         monthArray.push({"label": month});
-        petrolPrices.push({"value" : petrol});
-        dieselPrices.push({"value" : diesel});
+        humidity.push({"value" : h});
+        temp.push({"value" : p});
 	//trendLine.push({"value" : sredniaWILG});
 	srednia.push({"value" : sredniaTEMP});
 
@@ -109,8 +109,8 @@ function getData(responseObj){
 	var T = 0;
 	var TT = 0;
 	for (index in doc){
-		var diesel = doc["temp"];
-		var spr = isNaN(diesel);
+		var t2 = doc["temp"];
+		var spr = isNaN(t2);
 		if (spr == false){
 			TT = TT+1;
 			T = T + Math.round(((sredniaWILG/100) * TT)) + (sredniaWILG/2); 
@@ -124,11 +124,11 @@ function getData(responseObj){
     var dataset = [
       {
         "seriesname" : "Wilgotnosc",
-        "data" : petrolPrices
+        "data" : humidity
       },
       {
         "seriesname" : "Temperatura",
-        "data": dieselPrices
+        "data": temp
       },
 	{
 	"seriesname" : "LiniaTrendu",
